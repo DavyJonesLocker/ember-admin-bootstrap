@@ -1,25 +1,46 @@
-# Ember-admin-bootstrap
+# Ember Admin Bootstrap
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build](https://travis-ci.org/dockyard/ember-admin-bootstrap.svg?branch=master)](https://travis-ci.org/dockyard/ember-admin-bootstrap)
 
-## Installation
+## About ##
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Automatically discover your models and interact with all model data in a
+simple CRUD interface. Great for a drop-in starter admin backend.
 
-## Running
+EmberAdmin uses its own data store so as not to pull in data it
+shouldn't into your regular data store.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+EmberData is currently a requirement.
 
-## Running Tests
+## Install ##
 
-* `ember test`
-* `ember test --server`
+Add `ember-admin-bootstrap` to the `"dependencies"` in `package.json`. then run `npm install`.
 
-## Building
+## Usage ##
 
-* `ember build`
+View [Ember Admin's README for getting setup](https://github.com/dockyard/ember-admin#usage). This module will always inherit and use 
+Ember Admin itself and just provide specific template overrides.
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Authors ##
+
+* [Brian Cardarella](http://twitter.com/bcardarella)
+
+[We are very thankful for the many contributors](https://github.com/dockyard/ember-admin-bootstrap/graphs/contributors)
+
+## Versioning ##
+
+This library follows [Semantic Versioning](http://semver.org)
+
+## Want to help? ##
+
+Please do! We are always looking to improve this gem. Please see our
+[Contribution Guidelines](https://github.com/dockyard/ember-admin-bootstrap/blob/master/CONTRIBUTING.md)
+on how to properly submit issues and pull requests.
+
+## Legal ##
+
+[DockYard](http://dockyard.com), Inc &copy; 2014
+
+[@dockyard](http://twitter.com/dockyard)
+
+[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
