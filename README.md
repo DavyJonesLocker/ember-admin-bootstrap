@@ -1,17 +1,8 @@
 # Ember Admin Bootstrap
 
-[![Build](https://travis-ci.org/dockyard/ember-admin-bootstrap.svg?branch=master)](https://travis-ci.org/dockyard/ember-admin-bootstrap)
-
 ## About ##
 
-Automatically discover your models and interact with all model data in a
-simple CRUD interface. Great for a drop-in starter admin backend.
-
-EmberAdmin uses its own data store so as not to pull in data it
-shouldn't into your regular data store.
-
-EmberData is currently a requirement.
-
+Provides a [Twitter Bootstrap](http://getbootstrap.com/) theme for [Ember Admin](https://github.com/dockyard/ember-admin).
 ## Install ##
 
 Add `ember-admin-bootstrap` to the `"dependencies"` in `package.json`. then run `npm install`.
