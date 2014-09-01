@@ -32,6 +32,11 @@ ember server
 
 Then visit `http://localhost:4200/admin`
 
+## Contributing ##
+
+We are always looking to improve this theme. If you have suggestions
+please open a PR and include screenshots for review.
+
 ## Authors ##
 
 * [Brian Cardarella](http://twitter.com/bcardarella)
