@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  owner: DS.belongsTo('owner', {async: true})
+  dogs: DS.hasMany('dog', {async: true})
 });

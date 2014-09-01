@@ -12,6 +12,19 @@ Add `ember-admin-bootstrap` to the `"dependencies"` in `package.json`. then run 
 View [Ember Admin's README for getting setup](https://github.com/dockyard/ember-admin#usage). This module will always inherit and use 
 Ember Admin itself and just provide specific template overrides.
 
+## Demo ##
+
+This repo comes with a demo. If you'd like to see the demo run the following:
+
+```
+git clone https://github.com/dockyard/ember-admin-bootstrap.git
+cd ember-admin-bootstrap
+npm install && bower install
+ember server
+```
+
+Then visit `http://localhost:4200/admin`
+
 ## Authors ##
 
 * [Brian Cardarella](http://twitter.com/bcardarella)
