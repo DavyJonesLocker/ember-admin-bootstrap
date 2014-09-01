@@ -3,13 +3,20 @@
 ## About ##
 
 Provides a [Twitter Bootstrap](http://getbootstrap.com/) theme for [Ember Admin](https://github.com/dockyard/ember-admin).
+
 ## Install ##
 
 Add `ember-admin-bootstrap` to the `"dependencies"` in `package.json`. then run `npm install`.
 
 ## Usage ##
 
-View [Ember Admin's README for getting setup](https://github.com/dockyard/ember-admin#usage). This module will always inherit and use 
+It is up to you to include Bootstrap's CSS in your project. If you are
+looking for a simple solution for your Ember app please check out
+[ember-cli-bootstrap](https://github.com/dockyard/ember-cli-bootstrap).
+We don't include Bootstrap in this module to avoid unecessarily making
+assumptions on which Bootstrap modules to include.
+
+View [Ember Admin's README for getting setup](https://github.com/dockyard/ember-admin#usage) for the remaining instructions on getting started. This module will always inherit and use 
 Ember Admin itself and just provide specific template overrides.
 
 ## Demo ##
