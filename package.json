@@ -23,11 +23,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ember-admin": "0.0.5",
-    "ember-cli-bootstrap": "dockyard/ember-cli-bootstrap#bc-update-addon-index"
+    "ember-admin": "0.0.5"
   },
   "devDependencies": {
     "body-parser": "^1.2.0",
+    "ember-cli-bootstrap": "0.0.11",
     "broccoli-asset-rev": "0.0.17",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
     "connect-restreamer": "^1.0.0",
