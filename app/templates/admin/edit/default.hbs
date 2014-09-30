@@ -1,29 +1,46 @@
-<div class='edit panel panel-default col-md-6'>
-  <div class="panel-body">
-    <h2>Edit {{id}}</h2>
+<div class="col-md-6">
+  <div class="edit panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        Edit ({{recordType}} {{id}})
+      </h3>
+    </div>
 
-    <form role="form">
-      {{#each column in filteredColumns}}
-      <div {{bind-attr class=":model-column column :form-group"}}>
-          <label>
-            {{column}}
-            {{admin-input columnValue=column class="form-control"}}
-          </label>
-        </div>
+    <div class="panel-body">
+      <form role="form">
+        {{#each column in filteredColumns}}
+          <div {{bind-attr class=":model-column column :form-group"}}>
+            <label>
+              {{column}}
+              {{admin-input columnValue=column class="form-control"}}
+            </label>
+          </div>
+        {{/each}}
+      </form>
+    </div>
+
+    <div class="panel-footer">
+        {{async-button action="save" default="Save" pending="Saving..." fulfilled="Saved" rejected="Error" class="save btn btn-primary"}}
+        <button {{action "cancel"}} class="cancel btn btn-default">Cancel</button>
+
+        {{async-button action="destroyRecord" default="Delete" pending="Deleting..." fulfilled="Deleted" class="delete btn btn-danger pull-right"}}
+    </div>
+  </div>
+
+  <div class="relationships panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        Relationships ({{recordType}} {{id}})
+      </h3>
+    </div>
+
+    <div class="panel-body">
+      {{#each relationshipType in relationshipTypes}}
+        {{#each relationship in relationshipType}}
+          <h4>{{relationship.name}}</h4>
+          {{model-records-table recordType=relationship.type records=relationship.records relationshipName=relationship.inverse relationshipId=id}}
+        {{/each}}
       {{/each}}
-
-      {{async-button action="save" default="Save" pending="Saving..." fulfilled="Saved" rejected="Error" class="save btn btn-primary"}}
-      {{async-button action="destroyRecord" default="Delete" pending="Deleting..." fulfilled="Deleted" class="delete btn btn-danger"}}
-      <button {{action "cancel"}} class="cancel btn">Cancel</button>
-    </form>
-
-    <h2>Relationships</h2>
-
-    {{#each relationshipType in relationshipTypes}}
-      {{#each relationship in relationshipType}}
-        <h4>{{relationship.name}}</h4>
-        {{model-records-table recordType=relationship.type records=relationship.records relationshipName=relationship.inverse relationshipId=id}}
-      {{/each}}
-    {{/each}}
+    </div>
   </div>
 </div>
