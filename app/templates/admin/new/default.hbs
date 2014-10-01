@@ -1,19 +1,28 @@
-<div class='new panel panel-default col-md-6'>
-  <div class="panel-body">
-    <h2>Create</h2>
+<div class="col-md-6 right-column">
+  <div class="new panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        Create {{recordType}}
+      </h3>
+    </div>
 
-    <form role="form">
-      {{#each column in filteredColumns}}
-      <div {{bind-attr class=":model-column column :form-group"}}>
-          <label>
-            {{column}}
-            {{admin-input columnValue=column class="form-control"}}
-          </label>
-        </div>
-      {{/each}}
+    <div class="panel-body">
+      <form role="form">
+        {{#each column in filteredColumns}}
+          <div {{bind-attr class=":model-column column :form-group"}}>
+            <label>
+              {{column}}
+              {{admin-input columnValue=column class="form-control"}}
+            </label>
+          </div>
+        {{/each}}
+      </form>
+    </div>
 
-      {{async-button action="save" default="Save" pending="Saving..." fulfilled="Saved" rejected="Error" class="save btn btn-primary"}}
-      <button {{action "cancel"}} class="cancel btn">Cancel</button>
-    </form>
+    <div class="panel-footer">
+      {{async-button action="save" default="Save" pending="Saving..."
+        fulfilled="Saved" rejected="Error" class="save btn btn-primary"}}
+      <button {{action "cancel"}} class="cancel btn btn-default pull-right">Cancel</button>
+    </div>
   </div>
 </div>

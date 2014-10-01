@@ -1,18 +1,25 @@
 <div class="ember-admin container-fluid">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        {{link-to 'Admin' 'admin' class="navbar-brand"}}
-      </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            {{link-to 'Admin' 'admin' class='navbar-brand'}}
+          </div>
 
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          {{#each name in filteredModels}}
-            <li>{{link-to name 'model-records' name}}</li>
-          {{/each}}
-        </ul>
-      </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              {{#each name in filteredModels}}
+                <li>{{link-to name 'model-records' name}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-  {{outlet}}
+  </div>
+
+  <div class="row">
+    {{outlet}}
+  </div>
 </div>
