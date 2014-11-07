@@ -12,7 +12,7 @@
           <div {{bind-attr class=":model-column column :form-group"}}>
             <label>
               {{column}}
-              {{admin-input columnValue=column class="form-control"}}
+              {{admin-input record=this columnValue=column class="form-control"}}
             </label>
           </div>
         {{/each}}

@@ -17,7 +17,7 @@
   "author": "Brian Cardarella",
   "license": "MIT",
   "dependencies": {
-    "ember-admin": "0.0.8"
+    "ember-admin": "0.0.9"
   },
   "devDependencies": {
     "body-parser": "^1.2.0",
