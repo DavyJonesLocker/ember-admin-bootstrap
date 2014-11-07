@@ -1,6 +1,6 @@
 {
   "name": "ember-admin-bootstrap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -17,7 +17,7 @@
   "author": "Brian Cardarella",
   "license": "MIT",
   "dependencies": {
-    "ember-admin": "0.0.8"
+    "ember-admin": ">= 0.0.9"
   },
   "devDependencies": {
     "body-parser": "^1.2.0",
