@@ -8,7 +8,7 @@
 
     <div class="panel-body">
       <form role="form">
-        {{#each column in filteredColumns}}
+        {{#each filteredColumns as |column|}}
           <div {{bind-attr class=":model-column column :form-group"}}>
             <label>
               {{column}}
